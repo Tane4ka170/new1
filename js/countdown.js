@@ -1,5 +1,4 @@
 class CountdownTimer {
-  // setup timer values
   constructor({
     selector,
     targetDate,
@@ -11,7 +10,6 @@ class CountdownTimer {
     this.backgroundColor = backgroundColor;
     this.foregroundColor = foregroundColor;
 
-    // grab divs on frontend using supplied selector ID
     this.refs = {
       days: document.querySelector(`${this.selector} [data-value="days"]`),
       hours: document.querySelector(`${this.selector} [data-value="hours"]`),
